@@ -3,14 +3,17 @@ const app = express();
 const userRoute = require('./Routes/userRoute')
 const notesRoute = require('./Routes/notesRoute');
 const cors = require('cors');
+const dotenv = require("dotenv");
 
-const cookieParser = require("cookie-parser");
-app.use(cookieParser());
+// const cookieParser = require("cookie-parser");
+// app.use(cookieParser());
 
 app.use(cors({
     origin: "http://localhost:3000",
 }));
 
+
+dotenv.config();
 
 // connection
 require("./dbconnection/connection");

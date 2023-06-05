@@ -21,7 +21,7 @@ const UserSchama = new mongoose.Schema({
 
 UserSchama.methods.getnreateAuthTocken = async function () {
     try {
-        const token = await jwt.sign({ _id: this._id }, "pankajpankajpankajpankajpankajpankajpankaj",
+        const token = await jwt.sign({ _id: this._id }, process.env.SCREATE_KEY,
             { expiresIn: '1d' });
         return token;
     }

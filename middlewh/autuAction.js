@@ -4,7 +4,7 @@ const AutuAction = async (req, res, next) => {
     try {
         const authHeader = req.headers.authorization
         const token = authHeader.split(' ')[1]
-        const verifyToken = await jwt.verify(token, "pankajpankajpankajpankajpankajpankajpankaj");
+        const verifyToken = await jwt.verify(token, process.env.SCREATE_KEY);
         req.user = { userId: verifyToken._id }
         const rootUser = await User.findOne({ _id: verifyToken._id });
         if (!rootUser) {
