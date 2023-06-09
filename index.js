@@ -5,7 +5,7 @@ const notesRoute = require('./Routes/notesRoute');
 const cors = require('cors');
 const dotenv = require("dotenv");
 const path = require('path');
-
+const PORT = process.env.PORT || 8000
 
 
 
@@ -34,6 +34,7 @@ app.get('*', function (req, res) {
     res.sendFile(path.join(__dirname, './Client/build/index.html'))
 })
 
-app.listen(8000, () => {
+app.listen(PORT, () => {
+    console.log("pankaj kapuria")
     console.log("server is created on port no.8000");
 })
