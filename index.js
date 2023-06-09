@@ -4,11 +4,10 @@ const userRoute = require('./Routes/userRoute')
 const notesRoute = require('./Routes/notesRoute');
 const cors = require('cors');
 const dotenv = require("dotenv");
-
 const path = require('path');
 
-// const cookieParser = require("cookie-parser");
-// app.use(cookieParser());
+
+
 
 app.use(cors({
     origin: "http://localhost:3000",
@@ -29,10 +28,10 @@ app.use('/user', userRoute);
 app.use('/notes', notesRoute);
 
 // static file
-app.use(express.static(path.join(__dirname, '../Client/build')))
+app.use(express.static(path.join(__dirname, './Client/build')))
 
 app.get('*', function (req, res) {
-    res.sendFile(path.join(__dirname, '../Client/build/index.html'))
+    res.sendFile(path.join(__dirname, './Client/build/index.html'))
 })
 
 app.listen(8000, () => {
