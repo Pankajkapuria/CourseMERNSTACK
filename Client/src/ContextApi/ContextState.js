@@ -26,7 +26,7 @@ const UserState = (props) => {
     const getNotes = async () => {
         try {
             const auth = localStorage.getItem('token');
-            const note = await fetch(`http://localhost:8000/notes/fatch`, {
+            const note = await fetch(`/notes/fatch`, {
                 method: 'GET',
                 headers: {
                     Authorization: `Bearer ${auth}`
@@ -43,7 +43,7 @@ const UserState = (props) => {
     // add Notes
     const addNote = async (title, teg, dis) => {
         const auth = localStorage.getItem('token');
-        const response = await fetch(`http://localhost:8000/notes/addNotes`, {
+        const response = await fetch(`notes/addNotes`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -57,7 +57,7 @@ const UserState = (props) => {
 
     const deleteNote = async (_id) => {
         const auth = localStorage.getItem('token');
-        const response = await fetch(`http://localhost:8000/notes/deleteNotes/${_id}`, {
+        const response = await fetch(`notes/deleteNotes/${_id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',

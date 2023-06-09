@@ -31,7 +31,7 @@ function App() {
             <Route exact path='/Contact' element={<Contact />} />
             <Route exact path='/Login' element={<Login />} />
             <Route exact path='/SignUp' element={<SignUp />} />
-            <Route exact path='/note/NodeAdd' element={<NoteAdd />} />
+            <Route exact path='/NodeAdd' element={<NoteAdd />} />
           </Routes>
         </BrowserRouter>
       </div>

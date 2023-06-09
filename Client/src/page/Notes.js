@@ -34,7 +34,7 @@ function Notes() {
         </div>
       </>}
 
-      <Link to='/note/NodeAdd' className='p-2 border border-3 border-primary rounded position-fixed positionFixed'>
+      <Link to='/NodeAdd' className='p-2 border border-3 border-primary rounded position-fixed positionFixed'>
         <i className="fa-solid fa-plus  fa-2xl"></i>
       </Link>
 

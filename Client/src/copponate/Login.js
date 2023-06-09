@@ -22,7 +22,7 @@ function Login() {
     const hendelSumbit = async (e) => {
         e.preventDefault();
 
-        const responce = await fetch('http://localhost:8000/user/login', {
+        const responce = await fetch('user/login', {
             method: 'POST',
             headers: {
                 "Accept": "*/*",

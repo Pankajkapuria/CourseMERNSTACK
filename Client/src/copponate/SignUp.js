@@ -24,7 +24,7 @@ function SignUp() {
     const hendalSumbit = async (e) => {
         e.preventDefault();
         const { Name, email, phoneNumber, password, ConfromPassword } = userdata;
-        const responce = await fetch("http://localhost:8000/user/registration", {
+        const responce = await fetch("user/registration", {
             method: 'POST',
             headers: {
                 "Accept": "*/*",
