@@ -2,16 +2,16 @@ const express = require('express');
 const app = express();
 const userRoute = require('./Routes/userRoute')
 const notesRoute = require('./Routes/notesRoute');
-const cors = require('cors');
+// const cors = require('cors');
 const dotenv = require("dotenv");
 const path = require('path');
 const PORT = process.env.PORT || 8000
 
 
 
-app.use(cors({
-    origin: "http://localhost:3000",
-}));
+// app.use(cors({
+//     origin: "http://localhost:3000",
+// }));
 
 
 dotenv.config();
@@ -35,6 +35,5 @@ app.get('*', function (req, res) {
 })
 
 app.listen(PORT, () => {
-    console.log("pankaj kapuria")
-    console.log("server is created on port no.8000");
+    console.log("server is created on port no.5000");
 })
