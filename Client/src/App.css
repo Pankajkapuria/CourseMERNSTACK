@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+.text-color {
+  color: rgb(27, 27, 211);
+}
+
+li {
+  list-style: none;
+}
+
+.linkColour {
+  text-decoration: none;
+  color: white;
+}
+
+.text-background {
+  background-color: rgb(27, 27, 211);
+}
+
+.App {
+  text-align: center;
+}
+
+.height {
+  background-color: rgba(27, 27, 211, 0.544);
+  height: 500px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Home Page */
+
+/* NavBar 1 */
+.logo {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: rgb(27, 27, 211);
+}
+
+.NavItem {
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: black;
+}
+
+/* NavBar 2 */
+.Nav2 {
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: rgb(27, 27, 211);
+
+}
+
+.nav2Logo {
+  text-decoration: none;
+  font-size: 1.3rem;
+
+}
+
+/* NavBar */
+.hr {
+  margin: 0px 0px;
+}
+
+.navber {
+  border-bottom: 2px solid white;
+  box-shadow: 2px 4px 3px rgba(213, 200, 200, 0.646);
+  transform: scale(0px, 0px, 5px);
+}
+
+
+.box-shadow {
+  box-shadow: 5px 5px 5px rgba(146, 143, 143, 0.646);
+
+}
+
+
+
+
+/* Mid Section */
+.courseName {
+  color: rgb(27, 27, 211);
+  font-weight: 600;
+}
+
+
+
+.courseName::after {
+  content: "";
+  animation-name: courseName;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes courseName {
+  0% {
+    content: "HTML";
+  }
+
+  14% {
+    content: "CSS";
+  }
+
+  28% {
+    content: "JS";
+  }
+
+  42% {
+    content: "NODE JS";
+  }
+
+  56% {
+    content: "JAVA";
+  }
+
+  70% {
+    content: "DSA";
+  }
+
+  84% {
+    content: "MONGODB";
+  }
+
+  100% {
+    content: "HTML"
+  }
+}
+
+.activeclass {
+  border-bottom: 2px solid rgb(27, 27, 211);
+}
+
+.img-height {
+  height: 35vh;
+}
+
+/* about page */
+.mytop {
+  margin-top: 50px;
+  color: rgba(246, 246, 246, 0.904);
+}
+
+.positionFixed {
+  bottom: 4vw;
+  right: 4vw;
+  z-index: 1;
+}
+
+.pointer {
+  cursor: pointer;
+}
