@@ -35,5 +35,5 @@ app.get('*', function (req, res) {
 })
 
 app.listen(PORT, () => {
-    console.log("server is created on port no.8000");
+    console.log(`server is created on port no.${PORT}`);
 })
