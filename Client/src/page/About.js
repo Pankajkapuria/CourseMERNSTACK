@@ -5,8 +5,6 @@ import img from '../images/pankaj3.jpg';
 function About() {
   return (
     <div className="row  my-5 ">
-
-
       <div className="col-12 mx-auto mt-5  ">
         <div className="row">
           <div className="col-md-5 mx-auto col-10 order-2 order-md-2  d-flex flex-column justify-content-center  align-items-start ">

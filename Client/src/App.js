@@ -14,7 +14,6 @@ import NavBar from './copponate/NavBar';
 import Login from './copponate/Login';
 import SignUp from './copponate/SignUp';
 import UserState from './ContextApi/ContextState';
-// import Footer from './copponate/footer';
 import NoteAdd from './page/NoteAdd';
 
 function App() {

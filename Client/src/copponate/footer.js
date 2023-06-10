@@ -3,28 +3,31 @@ import { Link } from 'react-router-dom'
 
 function Footer() {
     return (
-        <div className='row bg-primary text-white'>
-            <div className='col-12 mx-auto mt-5'>
-                <div className="row">
-                    <div className=" col-md -3 ">
-                        <p>Pankaj kapuria</p>
-                        <p>The Ultimate Guide To Ace SDE Interviews.</p>
-                    </div>
-                    <div className=" col-md -3 ">
-                        <p>Menu</p>
-                        <li><Link className='p' to='/'>Home</Link></li>
-                        <li>Course</li>
-                        <li>Notes</li>
-                        <li>Connect</li>
-                        <li>About</li>
-                    </div>
-                    <div className=" col-md -3 ">
-                        <p>Service</p>
-                        <li>Privicy</li>
-                    </div>
-                </div>
+        <footer className="text-center text-white" style={{ backgroundColor: '#f1f1f1' }}>
+            {/* Grid container */}
+            <div className="container pt-4">
+                {/* Section: Social media */}
+                <section className="mb-4">
+                    {/* Facebook */}
+                    <a className="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i className="fab fa-facebook-f" /></a>
+                    {/* Twitter */}
+                    <a className="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i className="fab fa-twitter" /></a>
+                    {/* Google */}
+                    <a className="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i className="fab fa-google" /></a>
+                    {/* Instagram */}
+                    <a className="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i className="fab fa-instagram" /></a>
+                    {/* Linkedin */}
+                    <a className="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i className="fab fa-linkedin" /></a>
+                    {/* Github */}
+                    <a className="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i className="fab fa-github" /></a>
+                </section>
+                {/* Section: Social media */}
             </div>
-        </div>
+            <div className="text-center text-dark p-3" style={{ backgroundColor: 'rgba(27, 27, 211,0.6)' }}>
+                <p>@2023 : Course & Notes Store by pankaj kapuria</p>
+            </div>
+        </footer>
+
     )
 }
 

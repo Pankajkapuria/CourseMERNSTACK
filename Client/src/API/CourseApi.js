@@ -1,8 +1,8 @@
-import java from '../images/HTML.jpg'
-import HTML from '../images/HTML.jpg'
-import CSS from '../images/css.jpg'
-import MongoDb from '../images/css.jpg'
-import DSA from '../images/nodejs.jpg'
+import java from '../images/java.jpg'
+import HTML from '../images/HTML.png'
+import CSS from '../images/CSS.jpg'
+import MongoDb from '../images/mongodb.jpg'
+import DSA from '../images/dsa.png'
 
 const CourseApi = [
     {
@@ -19,7 +19,7 @@ const CourseApi = [
         title: "MongoDb Full Course",
         Img: MongoDb,
         Discription: "This latest MongoDb course comes with premium curriculum that covers everything from basics to advance. On top of that, you will get my handwritten notes of JS for completely free."
-    }, 
+    },
     {
         title: "HTML Full Course",
         Img: HTML,

@@ -8,6 +8,11 @@
 # testing
 /coverage
 
+# 
+/src
+/public
+/node_modules
+
 
 # misc
 .DS_Store

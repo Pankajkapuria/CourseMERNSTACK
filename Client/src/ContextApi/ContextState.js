@@ -26,7 +26,7 @@ const UserState = (props) => {
     const getNotes = async () => {
         try {
             const auth = localStorage.getItem('token');
-            const note = await fetch(`/notes/fatch`, {
+            const note = await fetch(`notes/fatch`, {
                 method: 'GET',
                 headers: {
                     Authorization: `Bearer ${auth}`
